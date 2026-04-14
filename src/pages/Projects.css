@@ -11,7 +11,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1vh
+    gap: 1vh;
+    background-color: rgb(241, 241, 241);
 }
 
 .projects-elements {
@@ -42,13 +43,47 @@
 
 .project-name h1 {
     margin: 0;
+    font-size: 24px;
 }
 
 .project-name p {
     margin: 0;
+    color: rgb(56, 56, 56);
+    font-weight: 500;
 }
 
 .project-details {
     width: 800px;
     font-family: montserrat, sans-serif;
+    color: rgb(56, 56, 56);
+    font-weight: 500;
+}
+
+.project-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-link a {
+    font-size: 18px;
+    color: black;
+    font-family: montserrat, sans-serif;
+    font-style: oblique;
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.tools {
+    font-family: montserrat, sans-serif;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(190, 190, 190);
+}
+
+.project-tool-use {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
 }

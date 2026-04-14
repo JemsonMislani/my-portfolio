@@ -1,3 +1,5 @@
+import { projects } from '../datas/project';
+import { FiExternalLink } from 'react-icons/fi';
 import './Projects.css';
 export function ProjectPage() {
     return(
@@ -5,26 +7,46 @@ export function ProjectPage() {
             <div className='project-header'>
                 <h1>Projects</h1>
             </div>
-
-            <div className='project-section'>
-                <div className='project-elements'>
-                    <div className='project-vid'>
-                        <video src="public/E-commerce-website-React-Pages.mp4" controls></video>
+            {projects.map((proj) => (
+                <div key={proj.id}>
+                    <div className='project-section'>
+                        <div className='project-elements'>
+                            <div className='project-vid'>
+                                <video src={proj.projectVideo} controls></video>
+                            </div>
+                        </div>
+                        <div>
+                            <img 
+                                className='project-img'
+                                src={proj.projectImage} alt="" />
+                        </div>
+                        <div className='project-name'>
+                            <h1>{proj.projectName}</h1>
+                            <p>{proj.projectDetails}</p>
+                        </div>
+                        <div className='project-details'>
+                            {proj.description.map((proj, ind) =>(
+                                <p key={ind}>{proj}</p>
+                            ))}
+                        </div>
+                        <div className='project-link'>
+                            <a 
+                                href={proj.projectLink} target='_blank'>
+                                <FiExternalLink /> 
+                                stepmatters.com
+                            </a>
+                        </div>
+                        <div className='project-tool-use'>
+                            {proj.stackUse.map((tool, ind) => (
+                                <p 
+                                    className='tools'
+                                    key={ind}>{tool}
+                                </p>
+                            ))}
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <img 
-                        className='project-img'
-                        src="/product-img.png" alt="" />
-                </div>
-                <div className='project-name'>
-                    <h1>Step Matters</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, aliquid velit quidem sed veniam placeat voluptatem necessitatibus commodi autem quo odit, accusantium fuga facere saepe ea praesentium magnam quod repudiandae.</p>
-                </div>
-                <div className='project-details'>
-                    <p>- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam labore rerum officiis distinctio officia perferendis sunt, unde aut accusamus laudantium.</p>
-                </div>
-            </div>
+            ))}
         </>
     );
 }
