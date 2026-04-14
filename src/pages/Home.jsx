@@ -28,7 +28,7 @@ export function HomePage() {
                 <div className='box2'>
                     <img 
                         className='hero-img'
-                        src="public/hahaha.png" alt="" />
+                        src="/my-image.png" alt="" />
                 </div>
             </div>
             <div className='line-header'>

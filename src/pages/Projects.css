@@ -1,0 +1,54 @@
+
+.project-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat, sans-serif;
+}
+
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh
+}
+
+.projects-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.project-vid {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.project-img {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 800px;
+    border: 1px solid black;
+}
+
+.project-name {
+    width: 800px;
+    font-family: montserrat, sans-serif;
+}
+
+.project-name h1 {
+    margin: 0;
+}
+
+.project-name p {
+    margin: 0;
+}
+
+.project-details {
+    width: 800px;
+    font-family: montserrat, sans-serif;
+}
