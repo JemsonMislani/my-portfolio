@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Home.css';
 export function HomePage() {
     return(
@@ -11,9 +12,27 @@ export function HomePage() {
                     <Link className='contact-link'>Contact</Link>
                 </div>
             </div>
-            <div>
-                <div>Box1</div>
-                <div>Box2</div>
+            <div className='aboutme-elements'>
+                <div className='box1'>
+                    <h1 className='my-name'>Hey! I'm Jem 👋</h1>
+                    <div className='my-paragraph'>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore at corporis aliquam incidunt, ex neque animi sequi voluptatibus</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora earum sapiente rerum atque, voluptatibus accusamus dolorem obcaecati eaque amet!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minima ad? Nostrum tempora magni rerum!</p>
+                    </div>
+                    <div className='icons'>
+                        <p><FaLinkedin /></p>
+                        <p><FaGithub /></p>
+                    </div>
+                </div>
+                <div className='box2'>
+                    <img 
+                        className='hero-img'
+                        src="public/hahaha.png" alt="" />
+                </div>
+            </div>
+            <div className='line-header'>
+                <div className='line'></div>
             </div>
         </>
     );
