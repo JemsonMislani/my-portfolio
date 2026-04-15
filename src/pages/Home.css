@@ -25,6 +25,22 @@
     cursor: pointer;
     font-family: montserrat, sans-serif;
     text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.home-link:hover,
+.projects-link:hover,
+.skills-link:hover,
+.contact-link:hover {
+    color: rgb(67, 170, 255);
+}
+
+.home-link:active,
+.projects-link:active,
+.skills-link:active,
+.contact-link:active {
+    color: black;
 }
 
 .aboutme-elements {
@@ -61,6 +77,15 @@
     cursor: pointer;
     margin: 0;
     padding: 0;
+
+}
+
+.icons p:hover {
+    color: rgb(67, 170, 255);
+}
+
+.icons p:hover:active {
+    color: rgb(83, 83, 83);
 }
 
 .hero-img {
