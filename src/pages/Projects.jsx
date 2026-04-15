@@ -1,7 +1,6 @@
 import { projects } from '../datas/project';
 import { FiExternalLink } from 'react-icons/fi';
 import './Projects.css';
-import { skills } from '../datas/skills';
 export function ProjectPage() {
     return(
         <>
@@ -53,22 +52,6 @@ export function ProjectPage() {
                     </div>
                 </div>
             ))}
-                <div className='skills-elements'>
-                    <h1>Skills</h1>
-                </div>
-                <div className='skills'>
-                    {skills.map((skl, ind) => (
-                        <div 
-                            className='skills-section'
-                            key={ind}>
-                            <img 
-                                className='skill-img'
-                                src={skl.icon} alt={skl.name}
-                            />
-                            <p className='skill-name'>{skl.name}</p>
-                        </div>
-                    ))}
-                </div>
         </>
     );
 }
