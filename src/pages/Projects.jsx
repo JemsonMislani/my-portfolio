@@ -14,7 +14,12 @@ export function ProjectPage() {
                     <div className='project-section'>
                         <div className='project-elements'>
                             <div className='project-vid'>
-                                <video src={proj.projectVideo} controls></video>
+                                <iframe 
+                                width="800" 
+                                height="400" 
+                                src="https://www.youtube.com/embed/SMKZButOyIs?" title="YouTube video player" frameborder="0"
+                                allowfullscreen
+                                sandbox="allow-scripts allow-same-origin allow-presentation allow-fullscreen"></iframe>
                             </div>
                         </div>
                         <div>
