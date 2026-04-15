@@ -1,0 +1,59 @@
+
+.contact-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-elements h1 {
+    font-family: montserrat, sans-serif;
+    color: rgb(83, 83, 83);
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.contact-email,
+.contact-cv {
+    margin: 0;
+}
+
+.contact-email {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: oblique;
+    font-family: montserrat, sans-serif;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+    color: rgb(83, 83, 83);
+}
+
+.contact-email:hover {
+    transform: scale(1.0);
+}
+
+.contact-email:hover {
+    color: rgb(67, 170, 255);
+}
+
+.contact-email:active {
+    color: rgb(0, 0, 0);
+}
+
+.contact-cv {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: oblique;
+    font-family: montserrat, sans-serif;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+    color: rgb(83, 83, 83);
+}
