@@ -1,3 +1,4 @@
+import { DiReact, DiHtml5, DiCss3 } from 'react-icons/di';
 import { projects } from '../datas/project';
 import { FiExternalLink } from 'react-icons/fi';
 import './Projects.css';
@@ -52,6 +53,12 @@ export function ProjectPage() {
                     </div>
                 </div>
             ))}
+                <div className='skills-elements'>
+                    <h1>Skills</h1>
+                    <div>
+                        
+                    </div>
+                </div>
         </>
     );
 }
