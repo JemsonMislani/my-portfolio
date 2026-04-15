@@ -8,7 +8,9 @@ export function ProjectPage() {
                 <h1>Projects</h1>
             </div>
             {projects.map((proj) => (
-                <div key={proj.id}>
+                <div 
+                    className='projects'
+                    key={proj.id}>
                     <div className='project-section'>
                         <div className='project-elements'>
                             <div className='project-vid'>
@@ -29,13 +31,16 @@ export function ProjectPage() {
                                 <p key={ind}>{proj}</p>
                             ))}
                         </div>
-                        <div className='project-link'>
-                            <a 
-                                href={proj.projectLink} target='_blank'>
-                                <FiExternalLink /> 
-                                stepmatters.com
-                            </a>
-                        </div>
+                        {proj.projectLink && (
+                            <div className='project-link'>
+                                <a 
+                                    href={proj.projectLink.url} target='_blank'
+                                    rel='noopener noreferrer'>
+                                    <FiExternalLink />
+                                    {proj.projectLink.name}
+                                </a>
+                            </div>
+                        )}
                         <div className='project-tool-use'>
                             {proj.stackUse.map((tool, ind) => (
                                 <p 
