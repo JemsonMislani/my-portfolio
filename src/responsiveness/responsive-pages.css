@@ -1,0 +1,142 @@
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    html {
+        width: 100%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .header-elements {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 80px;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        position: fixed;
+
+    }
+    
+    .header-links {
+        display: none;
+    }
+
+    .menu-elements {
+        display: block;
+    }
+
+    .hamburger-icon {
+        position: fixed;
+        top: 25px;
+        left: 20px;
+        width: 30px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1000;
+        gap: 2px;
+    }
+
+    .hamburger-icon span {
+        display: block;
+        height: 3px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        margin: 2px;
+        opacity: 1;
+    }
+
+    .menu-opt {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        z-index: 2000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        pointer-events: none;
+        border-radius: 10px;
+    }
+
+    .menu-page-icons {
+        position: absolute;
+        color: black;
+        display: flex;
+        gap: 20px;
+        font-size: 22px;
+        bottom: 70px;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color 0.3s ease;
+        z-index: 1000;
+        pointer-events: none;
+    }
+
+    .overlay.active {
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: auto;
+    }
+
+    .menu-opt.active {
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 14px;
+        right: 19px;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2000;
+    }
+
+    .menu-links {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .menu-links a{
+        top: 10px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

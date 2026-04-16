@@ -1,10 +1,60 @@
 import { socialLinks } from '../datas/social';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Home.css';
+import '../responsiveness/responsive-pages.css';
+import { useState } from 'react';
 export function HomePage() {
+    const [showmenu, setShowMenu] = useState(false);
+
     return(
         <>
             <div className='header-elements'>
+                <div className='menu-elements'>
+                    <div 
+                        className={`hamburger-icon ${showmenu ? 'show' : ''}`}
+                        onClick={() => setShowMenu(!showmenu)}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                    </div>
+                        <div 
+                            className={`overlay ${showmenu ? 'active' : ''}`}
+                            onClick={() => setShowMenu(false)}>
+                        </div>
+                        <div 
+                            className={`menu-opt ${showmenu ? 'active' : ''}`}>
+                        <button 
+                            className='close-button'
+                            onClick={() => setShowMenu(false)}>✕
+                        </button>
+                        <div className='menu-links'>
+                            <a 
+                                href='#home-page'
+                                className='home-link'
+                                onClick={(e) => {
+                                    e.preventDefault()
+                                    setShowMenu(false);
+                                }}>
+                                Home
+                            </a>
+                            <a 
+                                href='#project-page'
+                                className='projects-link'>
+                                Projects
+                            </a>
+                            <a 
+                                href='#skills-page'
+                                className='skills-link'>
+                                Skills
+                            </a>
+                            <a 
+                                href='#contact-page'
+                                className='contact-link'>
+                                Contact
+                            </a>    
+                        </div> 
+                        </div>
+                </div>
                 <div className='header-links'>
                     <a 
                         href='#home-page'
