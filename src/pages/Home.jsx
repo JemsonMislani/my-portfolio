@@ -1,3 +1,4 @@
+import { socialLinks } from '../datas/social';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Home.css';
 export function HomePage() {
@@ -37,10 +38,24 @@ export function HomePage() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora earum sapiente rerum atque, voluptatibus accusamus dolorem obcaecati eaque amet!</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minima ad? Nostrum tempora magni rerum!</p>
                     </div>
-                    <div className='icons'>
-                        <p><FaLinkedin /></p>
-                        <p><FaGithub /></p>
-                    </div>
+                    {socialLinks.map((lnk, ind) => (
+                        <div 
+                                key={ind}
+                                className='icons'>
+                            <a 
+                                href={lnk.linkedIn}
+                                target='_blank'
+                                rel='noopener noreferrer'>
+                                <FaLinkedin />
+                            </a>
+                            <a  
+                                href={lnk.github}
+                                target='_blank'
+                                rel='noopener noreferrer'>
+                                <FaGithub />
+                            </a>
+                        </div>
+                    ))}
                 </div>
                 <div className='box2'>
                     <img 
