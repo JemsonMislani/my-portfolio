@@ -7,19 +7,21 @@ export function ProjectPage() {
             <div className='project-header'>
                 <h1>Projects</h1>
             </div>
-            {projects.map((proj) => (
+            {projects.map((proj, ind) => (
                 <div 
                     className='projects'
                     key={proj.id}>
                     <div className='project-section'>
                         <div className='project-elements'>
-                            <div className='project-vid'>
+                            <div 
+                                key={ind}
+                                className='project-vid'>
                                 <iframe 
-                                width="800" 
-                                height="400" 
-                                src="https://www.youtube.com/embed/SMKZButOyIs?" title="YouTube video player" frameborder="0"
-                                allowfullscreen
-                                sandbox="allow-scripts allow-same-origin allow-presentation allow-fullscreen"></iframe>
+                                    width="800" 
+                                    height="400" 
+                                    src={proj.projectVideo} title="YouTube video player" frameborder="0"
+                                    allow='fullscreen' allowFullScreen>
+                                </iframe>
                             </div>
                         </div>
                         <div>

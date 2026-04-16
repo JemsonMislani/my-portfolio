@@ -1,6 +1,6 @@
 export const projects = [{
     id: 1,
-    projectVideo: '../E-commerce-website-React-Pages.mp4',
+    projectVideo: 'https://www.youtube.com/embed/SMKZButOyIs',
     projectImage: '../project-img-ecom.jpg',
     projectName: 'Step Matters',
     projectDetails: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ullam veniam velit ut expedita dicta sint impedit officiis facilis accusantium.',
@@ -29,7 +29,7 @@ export const projects = [{
     }
 }, {
     id: 2,
-    projectVideo: '../E-commerce-website-React-Pages.mp4',
+    projectVideo: 'https://www.youtube.com/embed/67SksQoLSfI',
     projectImage: '../project-img-lyrics&chords.jpg',
     projectName: 'Lyrics & Chords library',
     projectDetails: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ullam veniam velit ut expedita dicta sint impedit officiis facilis accusantium.',
@@ -58,7 +58,7 @@ export const projects = [{
     }
 }, {
     id: 3,
-    projectVideo: '../E-commerce-website-React-Pages.mp4',
+    projectVideo: 'https://www.youtube.com/embed/CmD5SqDBhEE',
     projectImage: '../project-img-dailytask.png',
     projectName: 'Daily task manager',
     projectDetails: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ullam veniam velit ut expedita dicta sint impedit officiis facilis accusantium.',
