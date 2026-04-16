@@ -57,3 +57,14 @@
     transition: transform 0.3s ease;
     color: rgb(83, 83, 83);
 }
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    height: 50px;
+    text-decoration: underline;
+    font-size: 14px;
+}
