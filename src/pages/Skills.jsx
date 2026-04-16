@@ -2,7 +2,8 @@ import { skills } from '../datas/skills';
 import './Skills.css';
 export function SkillsPage() {
     return(
-        <>
+        <section 
+            id='skills-page'>
             <div className='skills-elements'>
                 <h1>Skills</h1>
             </div>
@@ -19,6 +20,6 @@ export function SkillsPage() {
                     </div>
                 ))}
             </div>
-        </>
+        </section>
     );
 }

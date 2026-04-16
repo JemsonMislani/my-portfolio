@@ -3,8 +3,11 @@ import { FiExternalLink } from 'react-icons/fi';
 import './Projects.css';
 export function ProjectPage() {
     return(
-        <>
-            <div className='project-header'>
+        <section 
+            id='project-page'
+            className='projects-header-name'>
+            <div
+                className='project-header'>
                 <h1>Projects</h1>
             </div>
             {projects.map((proj, ind) => (
@@ -19,8 +22,7 @@ export function ProjectPage() {
                                 <iframe 
                                     width="800" 
                                     height="400" 
-                                    src={proj.projectVideo} title="YouTube video player" frameborder="0"
-                                    allow='fullscreen' allowFullScreen>
+                                    src={proj.projectVideo} title="YouTube video player" frameBorder="0" allowFullScreen>
                                 </iframe>
                             </div>
                         </div>
@@ -59,6 +61,6 @@ export function ProjectPage() {
                     </div>
                 </div>
             ))}
-        </>
+        </section>
     );
 }

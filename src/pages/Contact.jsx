@@ -12,7 +12,8 @@ export function ContactPage() {
     }
 
     return(
-        <>
+        <section
+            id='contact-page'>
             <div className='contact-elements'>
                 <h1>Contact</h1>
             </div>
@@ -23,6 +24,6 @@ export function ContactPage() {
                     </p>
                 <p className='contact-cv'>CV: Resume Jemson</p>
             </div>
-        </>
+        </section>
     );
 }
