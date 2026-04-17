@@ -30,11 +30,7 @@ export function HomePage() {
                         <div className='menu-links'>
                             <a 
                                 href='#home-page'
-                                className='home-link'
-                                onClick={(e) => {
-                                    e.preventDefault()
-                                    setShowMenu(false);
-                                }}>
+                                className='home-link'>
                                 Home
                             </a>
                             <a 

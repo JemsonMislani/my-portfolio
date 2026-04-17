@@ -12,12 +12,14 @@
 }
 
 .skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5vh;
-    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 .skills-section {

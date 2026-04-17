@@ -24,7 +24,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 20px;
         box-sizing: border-box;
         position: fixed;
 
@@ -139,4 +138,105 @@
         align-items: center;
         text-align: center;
     }
+
+    .aboutme-elements {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 0;
+    }
+
+    .box1 .my-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .my-paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .my-paragraph p {
+        font-size: 16px;
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 300px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects .project-section {
+        margin-bottom: 30px;
+    }
+
+    .project-section .project-elements{
+        width:380px;
+    }
+
+    .project-vid iframe {
+        height: 200px;
+    }
+
+    .project-elements {
+        height: 200px;
+    }
+
+    .project-section .project-img {
+        width: 380px;
+        height: 200px;
+    }
+
+    .project-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-name p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 370px;
+        text-align: center;
+    }
+
+    .project-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-details p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 360px;
+        margin: 5px;
+    }
+
+    .project-link a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-me {
+        
+    }
+
 }
