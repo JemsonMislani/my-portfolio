@@ -22,7 +22,7 @@ export function ContactPage() {
                 <p 
                     className='contact-email'
                     onClick={copymyEmail}>
-                   <p><FaEnvelope /></p>
+                   <span><FaEnvelope /></span>
                     : {myEmail} <FiCopy/>
                     </p>
                 <a 
