@@ -93,5 +93,5 @@
 .project-tool-use {
     display: flex;
     flex-direction: row;
-    gap: 2vh;
+    gap: 6px;
 }

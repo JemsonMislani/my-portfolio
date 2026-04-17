@@ -32,6 +32,17 @@
     position: relative;
     transition: transform 0.3s ease;
     color: rgb(83, 83, 83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-email p {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+    font-size: 20px;
 }
 
 .contact-email:hover {

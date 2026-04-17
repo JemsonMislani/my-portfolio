@@ -19,6 +19,7 @@ export const projects = [{
     ],
     stackUse: [
         'React',
+        'JS',
         'NodeJS',
         'Git',
         'CSS'
@@ -48,6 +49,7 @@ export const projects = [{
     ],
     stackUse: [
         'React',
+        'JS',
         'NodeJS',
         'Git',
         'CSS'
@@ -77,6 +79,7 @@ export const projects = [{
     ],
     stackUse: [
         'React',
+        'JS',
         'NodeJS',
         'Git',
         'CSS'
