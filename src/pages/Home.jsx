@@ -102,9 +102,9 @@ export function HomePage() {
                 <div className='box1'>
                     <h1 className='my-name'>Hey! I'm Jem 👋</h1>
                     <div className='my-paragraph'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore at corporis aliquam incidunt, ex neque animi sequi voluptatibus</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora earum sapiente rerum atque, voluptatibus accusamus dolorem obcaecati eaque amet!</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, minima ad? Nostrum tempora magni rerum!</p>
+                        <p>I'm a passionate Frontend Developer with a strong interest in building a functional web application. While my experience so far has focused on Frontend development, I'm actively learning back-end technologies to become a full-stack developer.</p>
+                        <p>I've worked on a variety of projects including <b>Step Matters</b>, where you can browse products, add items to cart, view totals and proceed to checkout. <b>Lyrics and Chords</b> app, where you can search songs and view their lyrics and chords. And <b>daily task manager</b>, to organize task and track progress.</p>
+                        <p> I enjoy tackling challenges, I'm looking forward to bring and use my skills to your team.</p>
                     </div>
                     {socialLinks.map((lnk, ind) => (
                         <div 
