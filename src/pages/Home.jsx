@@ -2,9 +2,26 @@ import { socialLinks } from '../datas/social';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Home.css';
 import '../responsiveness/responsive-pages.css';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 export function HomePage() {
     const [showmenu, setShowMenu] = useState(false);
+    const menuRef = useRef(null);
+
+    const closeMenu = () => {
+        setShowMenu(false);
+    };
+
+    useEffect(() => {
+        const clickedLink = (e) => {
+            if(menuRef.current && !menuRef.current.contains(e.target)){
+            closeMenu();
+            }
+        }
+
+        document.addEventListener('mousedown', clickedLink);
+        return () => document.removeEventListener('mousedown', clickedLink);
+    }, [])
+    
 
     return(
         <>
@@ -19,9 +36,10 @@ export function HomePage() {
                     </div>
                         <div 
                             className={`overlay ${showmenu ? 'active' : ''}`}
-                            onClick={() => setShowMenu(false)}>
+                            onClick={closeMenu}>
                         </div>
                         <div 
+                            ref={menuRef}
                             className={`menu-opt ${showmenu ? 'active' : ''}`}>
                         <button 
                             className='close-button'
@@ -30,22 +48,26 @@ export function HomePage() {
                         <div className='menu-links'>
                             <a 
                                 href='#home-page'
-                                className='home-link'>
+                                className='home-link'
+                                onClick={closeMenu}>
                                 Home
                             </a>
                             <a 
                                 href='#project-page'
-                                className='projects-link'>
+                                className='projects-link'
+                                onClick={closeMenu}>
                                 Projects
                             </a>
                             <a 
                                 href='#skills-page'
-                                className='skills-link'>
+                                className='skills-link'
+                                onClick={closeMenu}>
                                 Skills
                             </a>
                             <a 
                                 href='#contact-page'
-                                className='contact-link'>
+                                className='contact-link'
+                                onClick={closeMenu}>
                                 Contact
                             </a>    
                         </div> 
