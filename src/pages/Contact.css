@@ -66,6 +66,15 @@
     position: relative;
     transition: transform 0.3s ease;
     color: rgb(83, 83, 83);
+    text-decoration: none;
+}
+
+.contact-cv:hover {
+    color: rgb(67, 170, 255);
+}
+
+.contact-cv:active {
+    color: rgb(0, 0, 0);
 }
 
 .copyright {

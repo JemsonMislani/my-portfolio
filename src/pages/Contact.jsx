@@ -25,7 +25,11 @@ export function ContactPage() {
                    <p><FaEnvelope /></p>
                     : {myEmail} <FiCopy/>
                     </p>
-                <p className='contact-cv'>CV: Resume Jemson</p>
+                <a 
+                    className='contact-cv'
+                    href='https://drive.google.com/file/d/1hUZbkTQPZNX9xwWO7-WMnuCc67Pc8EQx/view?usp=sharing'
+                    target='_blank'
+                    rel='noopener noreferrer'>CV / Resume GDrive Link</a>
             </div>
             <div className='copyright'>
                 <span>2026 <FaRegCopyright/> Jemson Mislani</span>
